@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erasmus və Workcamp müraciət formu — NewWay</title>
+  <meta name="description" content="Erasmus+ və Workcamp proqramları üçün müraciət formu.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f766e'/><text x='50' y='70' font-size='60' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'>N</text></svg>">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Əsas məzmuna keç</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/index.html">New<span>Way</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menyunu aç">☰</button>
+      <nav class="main-nav" id="main-nav" aria-label="Əsas menyu">
+        <ul>
+          <li><a href="/index.html">Ana səhifə</a></li>
+          <li><a href="/xaricde-tehsil.html">Xaricdə təhsil</a></li>
+          <li><a href="/erasmus-workcamp.html">Erasmus və Workcamp</a></li>
+          <li><a href="/viza.html">Viza dəstəyi</a></li>
+          <li><a href="/haqqimizda.html">Haqqımızda</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container form-wrap">
+        <h1>Erasmus və Workcamp müraciət formu</h1>
+        <p class="lead">Məlumatları doldur, <span data-config="responseTime">[2 iş günü]</span> ərzində əlaqə saxlayaq. Məlumatların yalnız müraciətin qiymətləndirilməsi üçün istifadə olunur.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-wrap">
+        <form class="form-card" name="erasmus" method="POST" action="/tesekkur.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="erasmus">
+        <p class="hidden">
+          <label>Bu sahəni boş saxlayın: <input name="bot-field"></label>
+        </p>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="adsoyad">Ad, soyad <span class="req">*</span></label>
+            <input id="adsoyad" type="text" name="ad_soyad" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="dogum">Doğum tarixi <span class="req">*</span></label>
+            <input id="dogum" type="date" name="dogum_tarixi" autocomplete="bday" required>
+          </div>
+          <div class="field">
+            <label for="telefon">Telefon / WhatsApp <span class="req">*</span></label>
+            <input id="telefon" type="tel" name="telefon" autocomplete="tel" placeholder="+994 __ ___ __ __" required>
+          </div>
+          <div class="field full">
+            <label for="email">Email <span class="req">*</span></label>
+            <input id="email" type="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field full">
+            <fieldset>
+              <legend>Proqram növü <span class="req">*</span></legend>
+              <div class="options">
+                <label><input type="radio" name="proqram" value="erasmus" required> Erasmus</label>
+                <label><input type="radio" name="proqram" value="workcamp"> Workcamp</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="field">
+            <label for="status">Hazırkı status <span class="req">*</span></label>
+            <select id="status" name="status" required>
+              <option value="" disabled selected>Seçin</option>
+              <option>Tələbə</option>
+              <option>İşləyir</option>
+              <option>Digər</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="ingilis">İngilis dili səviyyəsi <span class="req">*</span></label>
+            <select id="ingilis" name="ingilis_dili" required>
+              <option value="" disabled selected>Seçin</option>
+              <option>A1</option>
+              <option>A2</option>
+              <option>B1</option>
+              <option>B2</option>
+              <option>C1</option>
+              <option>C2</option>
+              <option>Bilmirəm</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="olkeler">Maraqlandığın ölkələr</label>
+            <input id="olkeler" type="text" name="olkeler">
+          </div>
+          <div class="field">
+            <label for="tarix">Uyğun olduğun tarix aralığı</label>
+            <input id="tarix" type="text" name="tarix_araligi" placeholder="Məs.: iyul – avqust 2027">
+          </div>
+          <div class="field full">
+            <label for="tecrube">Əvvəlki könüllülük və ya mübadilə təcrübəsi</label>
+            <textarea id="tecrube" name="tecrube"></textarea>
+          </div>
+          <div class="field full">
+            <label for="niye">Niyə iştirak etmək istəyirsən? (2-3 cümlə) <span class="req">*</span></label>
+            <textarea id="niye" name="motivasiya" required></textarea>
+          </div>
+          <div class="field full">
+            <fieldset>
+              <legend>Xaricə çıxış pasportun var? <span class="req">*</span></legend>
+              <div class="options">
+              <label><input type="radio" name="pasport" value="Bəli" required> Bəli</label>
+              <label><input type="radio" name="pasport" value="Xeyr"> Xeyr</label>
+            </div>
+            </fieldset>
+          </div>
+          <div class="field full consent">
+            <label>
+              <input type="checkbox" name="razilik" value="Bəli" required>
+              <span>Şəxsi məlumatlarımın <a href="/mexfilik.html" target="_blank">Məxfilik Siyasəti</a> əsasında işlənməsinə razıyam <span class="req">*</span></span>
+            </label>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Müraciəti göndər</button>
+        </div>
+        <p class="required-note"><span class="req">*</span> məcburi sahə</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo footer-logo" href="/index.html">New<span>Way</span></a>
+          <p>Müraciətdən vizaya qədər Azərbaycan dilində sadə və aydın dəstək.</p>
+        </div>
+        <div>
+          <h3>Xidmətlər</h3>
+          <ul>
+            <li><a href="/xaricde-tehsil.html">Xaricdə təhsil</a></li>
+            <li><a href="/erasmus-workcamp.html">Erasmus və Workcamp</a></li>
+            <li><a href="/viza.html">Viza dəstəyi</a></li>
+            <li><a href="/haqqimizda.html">Haqqımızda</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Əlaqə</h3>
+          <ul>
+            <li>WhatsApp: <a data-config-link="whatsapp" href="#"><span data-config="whatsapp">[nömrə]</span></a></li>
+            <li>Email: <a data-config-link="email" href="#"><span data-config="email">[email]</span></a></li>
+            <li>Instagram: <a data-config-link="instagram" href="#"><span data-config="instagram">[@hesab]</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span data-year></span> NewWay · <a href="/mexfilik.html">Məxfilik Siyasəti</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

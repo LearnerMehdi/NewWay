@@ -1,0 +1,5 @@
+# Source copy documents stay local only
+*.docx
+~$*.docx
+
+.DS_Store
